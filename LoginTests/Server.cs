@@ -166,3 +166,7 @@ namespace LoginTests
         }
     }
 }
+
+// https://www.mking.net/blog/password-security-best-practices-with-examples-in-csharp
+// https://medium.com/@mehanix/lets-talk-security-salted-password-hashing-in-c-5460be5c3aae
+// https://simpleprogrammer.com/protect-your-passwords/
