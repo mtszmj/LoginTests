@@ -1,0 +1,31 @@
+﻿<Window x:Class="LoginTests.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginTests"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="150" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        
+        <Label Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right">Log in:</Label>
+        <TextBox Name="LoginBox" Grid.Row="0" Grid.Column="1" VerticalContentAlignment="Center" Text="{Binding User}"></TextBox>
+
+        <Label Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right">Password:</Label>
+        <PasswordBox Name="PasswordBox" Grid.Row="1" Grid.Column="1" VerticalContentAlignment="Center"></PasswordBox>
+
+        <Button Grid.Row="3" Grid.Column="0" Margin="5" Command="{Binding RegisterCommand}">Register</Button>
+        <Button Grid.Row="3" Grid.Column="1" Margin="5" Command="{Binding LoginCommand}">Login</Button>
+
+    </Grid>
+</Window>
